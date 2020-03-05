@@ -55,6 +55,9 @@ def disallow_positional_args(wrapped=None, allowed=None):
   return disallow_positional_args_dec(wrapped)  # pylint: disable=no-value-for-parameter
 
 
+# pylint: enable=unused-argument,pointless-statement,g-wrong-blank-lines,function-redefined
+
+
 def _check_no_positional(fn, args, is_method=False, allowed=None):
   allowed = set(allowed or [])
   offset = int(is_method)
