@@ -21,7 +21,9 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow.compat.v2 as tf
+tf.compat.v1.disable_v2_behavior()
 
+# pylint: disable=g-import-not-at-top
 import tensorflow_datasets as tfds  # pylint: disable=unused-import
 
 
